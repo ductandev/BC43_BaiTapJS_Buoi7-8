@@ -153,16 +153,16 @@ function sapXepTangDan(array) {
 // BÀI TẬP 8: Tìm số nguyên tố đầu tiên.
 // --------------------------------------
 /**
- * Hàm này dùng để kiểm số nguyên tố.
+ * Hàm này dùng để kiểm số đó có phải số nguyên tố hay không.
  * @param {*} array : mảng truyền vào.
- * @returns trả về giá trị true hoặc false
+ * @returns trả về giá trị true nếu số đó là số nguyên tố hoặc false là không phải số nguyên tố.
  */
-function kiemSoNguyenTo(array) {
-    if (array < 2) {
+function kiemSoNguyenTo(giaTri) {
+    if (giaTri < 2) {
         return false;
     }
-    for (var index = 2; index <= Math.sqrt(array); index++) {
-        if (array % index == 0) {
+    for (var index = 2; index <= Math.sqrt(giaTri); index++) {
+        if (giaTri % index == 0) {
             return false;
         }
     }
@@ -175,7 +175,7 @@ function kiemSoNguyenTo(array) {
  * Hàm này dùng để tìm ra số nguyên tố đầu tiên.
  * Nếu tìm được thì dừng chương trình và trả ra output.
  * @param {*} array : mảng truyền vào.
- * @returns Trả về số nguyên tố đầu tiên trong mảng.
+ * @returns Trả về số nguyên tố đầu tiên tim được trong mảng.
  */
 function SoNguyenToDauTien(array) {
     var output = -1;
