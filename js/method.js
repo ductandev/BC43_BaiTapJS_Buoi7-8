@@ -154,8 +154,8 @@ function sapXepTangDan(array) {
 // --------------------------------------
 /**
  * Hàm này dùng để kiểm số đó có phải số nguyên tố hay không.
- * @param {*} array : mảng truyền vào.
- * @returns trả về giá trị true nếu số đó là số nguyên tố hoặc false là không phải số nguyên tố.
+ * @param {*} giaTri : giá trị phần tử trong mảng.
+ * @returns trả về giá trị là True nếu số đó là số nguyên tố hoặc False là không phải số nguyên tố.
  */
 function kiemSoNguyenTo(giaTri) {
     if (giaTri < 2) {
